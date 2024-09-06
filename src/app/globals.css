@@ -8,6 +8,78 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header h1{
+  font-size: 2rem;
+  color: #d36409;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.Header img{
+  width: 100px;
+  height: auto;
+  background-color: aqua;
+}
+.Header p{
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 20px;
+  display: flex;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.slider-container{
+  width:100vw;
+  overflow:hidden;
+  position: relative;
+}
+
+.button-container{
+  display: flex;
+  width: max-content;
+  animation: slideinfinte 10s linear infinite;
+}
+
+.skill-button{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #06f561;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+/* Animation for sliding from right to left */
+@keyframes slideinfinte {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-90%);
+  }
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -16,15 +88,6 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 @layer utilities {
   .text-balance {
