@@ -1,12 +1,16 @@
 import Header from "./Header";
 import AboutMe from "./AboutMe";
+import Spare_comp from "./Spare_comp";
+import ContactMe from "./ContactMe";
 
 export default function Home() {
+  
   return (
     <main>
       <Header/>
       <AboutMe/>
-      <img className="potrait" src="https://i.imgur.com/8Km9tLL.jpg" alt="potrait"/>
+      <Spare_comp/>
+      <ContactMe/>
     </main>
   );
 }
