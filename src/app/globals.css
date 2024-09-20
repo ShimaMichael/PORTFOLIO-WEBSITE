@@ -12,8 +12,9 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
   margin: 20px;
+  margin-top: 200px;
   height: 1024px;
 }
 
@@ -69,15 +70,11 @@ body{
 }
 
 .AboutMe{
-  width: 565px;
-  height: 479px;
-  flex-shrink: 0;
-  border-radius: var(--Rounded, 20px);
-  background: var(--Primary, lightgrey);
-  margin-top: 21px;
+  display: flex;
+  width: 920px;
 }
 
-.AboutMe h1{
+.aboutMe_content h1{
   color: var(--Text, #000);
   leading-trim: both;
   text-edge: cap;
@@ -91,7 +88,7 @@ body{
   flex-shrink: 0;
 }
 
-.AboutMe p{
+.aboutMe_content p{
   color: var(--Text, #000);
   font-family: Gilroy;
   font-size: 56px;
@@ -106,10 +103,84 @@ body{
   line-height: 100%;
 }
 
+.aboutMe_content {
+  width: 565px;
+  height: 479px;
+  flex-shrink: 0;
+  border-radius: var(--Rounded, 20px);
+  background: var(--Primary, lightgrey);
+  margin-top: 21px;                 /* Adjust width of text content */
+}
 
-.potriat{
-  width: 355px;
-  height: 556px;
+.image {
+  width: 50%;                  /* Adjust width of image container */
+  display: flex;
+  justify-content: flex-end;    /* Align image to the right */
+  margin-top: 24px;
+  margin-right:24px;
+  margin-left: 24px; 
+}
+
+.image img {
+  background-color: #06f561;
+  border-radius: 20px;
+  width: 100%;
+  height: 479px;
+}
+
+/*
+.image{
+  display: flex;
+  position: relative;
+  border-radius: 20%;
+  justify-content: flex-end;
+  max-width: 355px;
+  height: 479px;
+  object-fit: cover;
+}
+  */
+
+.Spare_comp{
+  width: 448px;
+  height: 351px;
+  position: relative;
+  border-radius: 20px;
+  height: 351px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  font-family: Gilroy;
+  background-color: lightgrey;
+  margin-top: 21px;
+}
+
+.Spare_comp p{
+  position: absolute;
+  top: calc(50% - 20.5px);
+  font-size: 20px;
+  left: 24px;
+  line-height: 25px;
+  font-weight: 300;
+  display: inline-block;
+  width: 296px;
+  height: 150px;
+}
+
+.contact_container{
+  width: 448px;
+  position: relative;
+  border-radius: 20px;
+  height: 351px;
+  text-align: left;
+  font-size: 55px;
+  color: black;
+  font-family: Gilroy;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 21px;
+  margin-left: 50px;
+  background-color: black;
 }
 
 .slider-container{
